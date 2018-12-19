@@ -11,7 +11,38 @@
 		C9FD004621CAAD8000149FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD004521CAAD8000149FBC /* ViewController.swift */; };
 		C9FD004821CAAD8100149FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FD004721CAAD8100149FBC /* Assets.xcassets */; };
 		C9FD004B21CAAD8100149FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FD004921CAAD8100149FBC /* LaunchScreen.storyboard */; };
+		C9FD005921CAADAB00149FBC /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FD005821CAADAB00149FBC /* Messages.framework */; };
+		C9FD005C21CAADAB00149FBC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD005B21CAADAB00149FBC /* MessagesViewController.swift */; };
+		C9FD005F21CAADAB00149FBC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FD005D21CAADAB00149FBC /* MainInterface.storyboard */; };
+		C9FD006121CAADAC00149FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FD006021CAADAC00149FBC /* Assets.xcassets */; };
+		C9FD006521CAADAC00149FBC /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C9FD005621CAADAB00149FBC /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9FD006B21CAADD700149FBC /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD006A21CAADD700149FBC /* SharedUserDefaults.swift */; };
+		C9FD006C21CAADD700149FBC /* SharedUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD006A21CAADD700149FBC /* SharedUserDefaults.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9FD006321CAADAC00149FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FD003821CAAD8000149FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9FD005521CAADAB00149FBC;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9FD006921CAADAC00149FBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C9FD006521CAADAC00149FBC /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9FD004021CAAD8000149FBC /* SharedUserDefaultsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedUserDefaultsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,15 @@
 		C9FD004721CAAD8100149FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9FD004A21CAAD8100149FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9FD004C21CAAD8100149FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FD005621CAADAB00149FBC /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FD005821CAADAB00149FBC /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		C9FD005B21CAADAB00149FBC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		C9FD005E21CAADAB00149FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C9FD006021CAADAC00149FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9FD006221CAADAC00149FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9FD006A21CAADD700149FBC /* SharedUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUserDefaults.swift; sourceTree = "<group>"; };
+		C9FD006D21CAAEF800149FBC /* SharedUserDefaultsTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedUserDefaultsTutorial.entitlements; sourceTree = "<group>"; };
+		C9FD006E21CAAF2E00149FBC /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +70,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9FD005321CAADAB00149FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD005921CAADAB00149FBC /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				C9FD004221CAAD8000149FBC /* SharedUserDefaultsTutorial */,
+				C9FD005A21CAADAB00149FBC /* Extension */,
+				C9FD005721CAADAB00149FBC /* Frameworks */,
 				C9FD004121CAAD8000149FBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				C9FD004021CAAD8000149FBC /* SharedUserDefaultsTutorial.app */,
+				C9FD005621CAADAB00149FBC /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,13 +103,35 @@
 		C9FD004221CAAD8000149FBC /* SharedUserDefaultsTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				C9FD006D21CAAEF800149FBC /* SharedUserDefaultsTutorial.entitlements */,
 				C9FD004321CAAD8000149FBC /* AppDelegate.swift */,
 				C9FD004521CAAD8000149FBC /* ViewController.swift */,
 				C9FD004721CAAD8100149FBC /* Assets.xcassets */,
 				C9FD004921CAAD8100149FBC /* LaunchScreen.storyboard */,
 				C9FD004C21CAAD8100149FBC /* Info.plist */,
+				C9FD006A21CAADD700149FBC /* SharedUserDefaults.swift */,
 			);
 			path = SharedUserDefaultsTutorial;
+			sourceTree = "<group>";
+		};
+		C9FD005721CAADAB00149FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD005821CAADAB00149FBC /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9FD005A21CAADAB00149FBC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD006E21CAAF2E00149FBC /* Extension.entitlements */,
+				C9FD005B21CAADAB00149FBC /* MessagesViewController.swift */,
+				C9FD005D21CAADAB00149FBC /* MainInterface.storyboard */,
+				C9FD006021CAADAC00149FBC /* Assets.xcassets */,
+				C9FD006221CAADAC00149FBC /* Info.plist */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,15 +144,34 @@
 				C9FD003C21CAAD8000149FBC /* Sources */,
 				C9FD003D21CAAD8000149FBC /* Frameworks */,
 				C9FD003E21CAAD8000149FBC /* Resources */,
+				C9FD006921CAADAC00149FBC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9FD006421CAADAC00149FBC /* PBXTargetDependency */,
 			);
 			name = SharedUserDefaultsTutorial;
 			productName = SharedUserDefaultsTutorial;
 			productReference = C9FD004021CAAD8000149FBC /* SharedUserDefaultsTutorial.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C9FD005521CAADAB00149FBC /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FD006621CAADAC00149FBC /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				C9FD005221CAADAB00149FBC /* Sources */,
+				C9FD005321CAADAB00149FBC /* Frameworks */,
+				C9FD005421CAADAB00149FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = C9FD005621CAADAB00149FBC /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,6 +185,19 @@
 				TargetAttributes = {
 					C9FD003F21CAAD8000149FBC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C9FD005521CAADAB00149FBC = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -110,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				C9FD003F21CAAD8000149FBC /* SharedUserDefaultsTutorial */,
+				C9FD005521CAADAB00149FBC /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +230,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9FD005421CAADAB00149FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD006121CAADAC00149FBC /* Assets.xcassets in Resources */,
+				C9FD005F21CAADAB00149FBC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -132,11 +247,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FD004621CAAD8000149FBC /* ViewController.swift in Sources */,
+				C9FD006B21CAADD700149FBC /* SharedUserDefaults.swift in Sources */,
 				C9FD004421CAAD8000149FBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9FD005221CAADAB00149FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD005C21CAADAB00149FBC /* MessagesViewController.swift in Sources */,
+				C9FD006C21CAADD700149FBC /* SharedUserDefaults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9FD006421CAADAC00149FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9FD005521CAADAB00149FBC /* Extension */;
+			targetProxy = C9FD006321CAADAC00149FBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9FD004921CAAD8100149FBC /* LaunchScreen.storyboard */ = {
@@ -145,6 +278,14 @@
 				C9FD004A21CAAD8100149FBC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C9FD005D21CAADAB00149FBC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FD005E21CAADAB00149FBC /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -269,7 +410,9 @@
 		C9FD005021CAAD8100149FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedUserDefaultsTutorial/SharedUserDefaultsTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = SharedUserDefaultsTutorial/Info.plist;
@@ -287,7 +430,9 @@
 		C9FD005121CAAD8100149FBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedUserDefaultsTutorial/SharedUserDefaultsTutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = SharedUserDefaultsTutorial/Info.plist;
@@ -297,6 +442,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.SharedUserDefaultsTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9FD006721CAADAC00149FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.SharedUserDefaultsTutorial.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9FD006821CAADAC00149FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.SharedUserDefaultsTutorial.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,6 +506,15 @@
 			buildConfigurations = (
 				C9FD005021CAAD8100149FBC /* Debug */,
 				C9FD005121CAAD8100149FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FD006621CAADAC00149FBC /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FD006721CAADAC00149FBC /* Debug */,
+				C9FD006821CAADAC00149FBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
